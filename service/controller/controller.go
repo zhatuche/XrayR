@@ -358,11 +358,11 @@ func (c *Controller) addNewUser(userInfo *[]api.UserInfo, nodeInfo *api.NodeInfo
 			} else {
 				alterID = nodeInfo.AlterID
 			}
-			if alterID >= 0 && alterID < math.MaxUint16 {
-				users = c.buildVmessUser(userInfo, uint16(alterID))
+			if alterID >= 0 && alterID < math.MaxUint32 {
+				users = c.buildVmessUser(userInfo, uint32(alterID))
 			} else {
 				users = c.buildVmessUser(userInfo, 0)
-				return fmt.Errorf("AlterID should between 0 to 1<<16 - 1, set it to 0 for now")
+				return fmt.Errorf("AlterID should between 0 to 1<<32 - 1, set it to 0 for now")
 			}
 		}
 	} else if nodeInfo.NodeType == "Trojan" {
