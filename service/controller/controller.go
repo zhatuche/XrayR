@@ -358,7 +358,7 @@ func (c *Controller) addNewUser(userInfo *[]api.UserInfo, nodeInfo *api.NodeInfo
 			} else {
 				alterID = nodeInfo.AlterID
 			}
-			if alterID >= 0 && alterID < math.MaxUint32 {
+			if alterID >= 0 && alterID < math.MaxUint16 {
 				users = c.buildVmessUser(userInfo, uint16(alterID))
 			} else {
 				users = c.buildVmessUser(userInfo, 0)
