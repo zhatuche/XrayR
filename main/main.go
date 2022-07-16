@@ -12,9 +12,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/straint/XrayR/panel"
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
+	"github.com/straint/XrayR/panel"
 )
 
 var (
@@ -23,7 +23,7 @@ var (
 )
 
 var (
-	version  = "0.9.0"
+	version  = "0.9.2"
 	codename = "XrayR"
 	intro    = "A Xray backend that supports many panels"
 )
