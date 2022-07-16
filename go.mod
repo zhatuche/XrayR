@@ -171,7 +171,4 @@ require (
 )
 
 replace github.com/linode/linodego => github.com/linode/linodego v0.31.1
-
 replace github.com/exoscale/egoscale => github.com/exoscale/egoscale v0.67.0
-
-replace github.com/lucas-clemente/quic-go => github.com/lucas-clemente/quic-go v0.27.2
